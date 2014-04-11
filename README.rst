@@ -38,11 +38,11 @@ The first thing to do is to create a scheduler::
 
 Then you can start adding threads to the scheduler::
 
-    sched:new_thread(function(msg) while true do print(msg) end, 'Hello world')
+    sched:new_thread(function(msg) while true do print(msg) end end, 'Hello world')
     -- it's also possible to specify the number of instructions a thread will
     -- execute before releasing control to another thread. To do that pass an
     -- integer as the first argument to the new_thread() method.
-    sched:new_thread(10, function() while true do print('foo') end)
+    sched:new_thread(10, function() while true do print('foo') end end)
 
 Finally run the scheduler::
 
