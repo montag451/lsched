@@ -49,5 +49,5 @@ Finally run the scheduler::
     sched:run()
 
 When all threads managed by the scheduler terminate or die, the run() method returns.
-It is possible to add new threads to the scheduler will it is running.
+It is possible to add new threads to the scheduler while it is running.
 
